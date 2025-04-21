@@ -2,21 +2,35 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>광고 슬롯</title>
+  <title>쿠팡 파트너스 광고</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body { margin: 0; padding: 0; text-align: center; background: #fff; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      text-align: center;
+    }
+    .ad-container {
+      width: 150px;
+      height: 400px;
+      margin: 0 auto;
+    }
   </style>
 </head>
 <body>
-  <!-- 네이버 애드포스트 광고 코드 붙여넣기 -->
-  <ins class="adsbynaver"
-       style="display:block"
-       data-ad-unit="AD-XXXXXX"
-       data-ad-width="320"
-       data-ad-height="100"></ins>
-  <script>
-    (window.adsbynaver = window.adsbynaver || []).push({});
-  </script>
-  <script src="https://ad.naver.com/static/js/adbynaver.js?20240327"></script>
+  <div class="ad-container">
+    <script src="https://ads-partners.coupang.com/g.js"></script>
+    <script>
+      new PartnersCoupang.G({
+        "id": 858529,
+        "template": "carousel",
+        "trackingCode": "AF9908602",
+        "width": "150",
+        "height": "400",
+        "tsource": ""
+      });
+    </script>
+  </div>
 </body>
 </html>
